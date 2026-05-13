@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       img: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=1600&q=80',
-      subtitle: 'JOIN THE<br/><span class="accent">PHALANX</span><br/>OF WARRIORS'
+      subtitle: 'JOIN OUR<br/><span class="accent">COMMUNITY</span><br/>OF WARRIORS'
     },
     {
       img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&q=80',

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MY FITNESS CMS</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">MY FITNESS</h1>
+                <p class="subtitle">CMS Admin</p>
+            </div>
+            <nav class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="members.html" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Members</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="payments.html" class="nav-link">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Payments</span>
+                    </a>
+                </li>
+
+            </nav>
+            <button onclick="logout()" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="section-header">
+                <h2>Overview Dashboard</h2>
+                <div class="user-profile">
+                    <span id="adminName">Admin User</span>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-title">Total Active Members</div>
+                    <div class="stat-value" id="activeMembersCount">0</div>
+                    <div class="stat-trend trend-up"><i class="fas fa-arrow-up"></i> 12% this month</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Expiring Soon</div>
+                    <div class="stat-value" id="expiringSoonCount">0</div>
+                    <div class="stat-trend trend-down"><i class="fas fa-clock"></i> Next 7 days</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Total Revenue (LKR)</div>
+                    <div class="stat-value" id="totalRevenueCount">0</div>
+                    <div class="stat-trend trend-up"><i class="fas fa-coins"></i> Total collections</div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <h3>Recent Payments</h3>
+                    <a href="payments.html" class="link-arrow">View All</a>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Member</th>
+                            <th>Amount</th>
+                            <th>Method</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recentPaymentsBody">
+                        <tr>
+                            <td colspan="4" style="text-align: center; color: var(--text-gray);">No recent payments</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

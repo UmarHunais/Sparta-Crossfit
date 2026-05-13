@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPARTA – Elite CrossFit & Functional Fitness Box</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="SPARTA" style="height: 55px; filter: brightness(0) invert(1) contrast(200%);" /></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#strength">Strength Training</a></li>
+            <li><a href="services.html#bodybuilding">Body Building</a></li>
+            <li><a href="services.html#yoga">Basic Yoga</a></li>
+            <li><a href="services.html#cardio">Cardio Exercise</a></li>
+          </ul>
+        </li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80" alt="Gym" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text fade-up">
+        <h1 class="hero-title">SPARTA</h1>
+      <h2 class="hero-subtitle">FORGE STRENGTH.<br/>BUILD WARRIORS.</h2>
+      <p class="hero-desc">The elite functional fitness community in Sri Lanka. Discipline. Grit. Performance.</p>
+        <div class="hero-btns">
+          <a href="contact.html" class="btn btn-primary shine-btn">Make Appointment</a>
+          <button id="watchVideoBtn" class="btn btn-outline video-play-btn" type="button">
+            <span class="play-icon-wrap"><span class="play-icon">▶</span></span> Watch Video Profile
+          </button>
+        </div>
+      </div>
+      <div class="hero-slider-controls">
+        <button class="slider-btn prev-btn">&#8592;</button>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="slider-btn next-btn">&#8594;</button>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== TICKER STRIP ===== -->
+  <div class="ticker-strip">
+    <div class="ticker-track">
+      <span>✦ BEGINNER FRIENDLY</span>
+      <span>✦ LIVE CONSULTANCY</span>
+      <span>✦ 50+ TRAINED COACH</span>
+      <span>✦ WORKOUT PROGRAM</span>
+      <span>✦ BEGINNER FRIENDLY</span>
+      <span>✦ LIVE CONSULTANCY</span>
+      <span>✦ 50+ TRAINED COACH</span>
+      <span>✦ WORKOUT PROGRAM</span>
+      <span>✦ BEGINNER FRIENDLY</span>
+      <span>✦ LIVE CONSULTANCY</span>
+    </div>
+  </div>
+
+  <!-- ===== WHAT IS CROSSFIT ===== -->
+  <section class="about-teaser section-pad">
+    <div class="container">
+      <div class="about-teaser-grid">
+        <div class="about-left fade-up">
+          <h2 class="section-heading">MORE THAN A GYM. <br /><span class="accent">IT'S A BOX.</span></h2>
+        </div>
+        <div class="about-right fade-up delay-1">
+          <p>CrossFit is a lifestyle characterized by safe, effective exercise and sound nutrition. It's about moving your body the way it was designed to move. At SPARTA, we focus on functional movements, intensity, and a community that pushes you to be better every single day.</p>
+          <a href="about.html" class="link-arrow">DISCOVER OUR CULTURE ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DAILY WOD ===== -->
+  <section class="wod-section section-pad center">
+    <div class="container">
+      <div class="section-label fade-up">TODAY'S WORKOUT</div>
+      <div class="wod-card fade-up">
+        <div class="wod-date">MAY 11, 2026</div>
+        <h3 class="wod-title">"LEONIDAS"</h3>
+        <div class="wod-grid">
+          <div class="wod-item">
+            <h4>THE WORKOUT</h4>
+            <p>21-15-9 Reps for Time:<br/>Thrusters (95/65 lb)<br/>Pull-ups<br/>Burpees over Bar</p>
+          </div>
+          <div class="wod-item">
+            <h4>THE GOAL</h4>
+            <p>Intensity is the key. Aim for sub-10 minutes. Scale weights to maintain movement quality.</p>
+          </div>
+        </div>
+        <a href="services.html" class="btn btn-primary shine-btn" style="margin-top: 40px;">VIEW FULL SCHEDULE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-label fade-up">OUR SERVICES</div>
+      <h2 class="section-title center fade-up">PROGRAMS YOU'LL GET</h2>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 4v16M18 4v16M2 8h4M18 8h4M2 16h4M18 16h4" />
+            </svg>
+          </div>
+          <h3>CrossFit WOD</h3>
+          <p>High-intensity functional movements performed at high intensity. The heart of SPARTA.</p>
+          <a href="services.html" class="card-link">SEE DETAILS ↗</a>
+        </div>
+        <div class="service-card active fade-up delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M6 4v16M18 4v16M2 8h4M18 8h4" />
+            </svg>
+          </div>
+          <h3>Olympic Lifting</h3>
+          <p>Master the Snatch and Clean & Jerk. Elite coaching for absolute power.</p>
+          <a href="services.html" class="card-link">SEE DETAILS ↗</a>
+        </div>
+        <div class="service-card fade-up delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3c-1.5 3-4 5-4 8a4 4 0 008 0c0-3-2.5-5-4-8z" />
+              <path d="M12 15v6M9 18h6" />
+            </svg>
+          </div>
+          <h3>Conditioning</h3>
+          <p>Endurance, stamina, and mental toughness. Push your limits with HYROX-style training.</p>
+          <a href="services.html" class="card-link">SEE DETAILS ↗</a>
+        </div>
+      </div>
+      <div class="center-btn fade-up">
+        <a href="services.html" class="btn btn-primary">See All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us section-pad" id="why-us">
+    <div class="container">
+      <div class="why-us-grid">
+        <div class="why-left fade-up">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80" alt="Trainer" />
+        </div>
+        <div class="why-right">
+          <h2 class="section-heading fade-up">WHY <span class="accent">JOIN THE PHALANX</span>?</h2>
+          <p class="fade-up delay-1">At SPARTA, we don't just train bodies; we build resilience. Our community-driven atmosphere and elite functional training methods ensure you are prepared for any challenge, inside or outside the box.</p>
+          <div class="why-features">
+            <div class="why-item fade-up delay-1">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <div class="why-text">
+                <h4>Supportive Trainers</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tristique ligula, sit amet euismod
+                  ligula.</p>
+              </div>
+            </div>
+            <div class="why-item fade-up delay-2">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <div class="why-text">
+                <h4>25+ Years Experiences</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tristique ligula, sit amet euismod
+                  ligula.</p>
+              </div>
+            </div>
+            <div class="why-item fade-up delay-3">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                  <polyline points="9,22 9,12 15,12 15,22" />
+                </svg>
+              </div>
+              <div class="why-text">
+                <h4>Complete Facilities</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tristique ligula, sit amet euismod
+                  ligula.</p>
+              </div>
+            </div>
+            <div class="why-item fade-up delay-3">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                  <polyline points="22,4 12,14.01 9,11.01" />
+                </svg>
+              </div>
+              <div class="why-text">
+                <h4>Personal Training Services</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget tristique ligula, sit amet euismod
+                  ligula.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS / PROGRESS ===== -->
+  <section class="achievements section-pad">
+    <div class="container">
+      <div class="achievements-grid">
+        <div class="achievements-left fade-up">
+          <div class="section-label">ELITE PERFORMANCE BENCHMARKS</div>
+          <h2 class="section-heading">FORGING ELITE <br /><span class="accent">ATHLETICISM</span></h2>
+          <p>Our training methodology is rooted in functional intensity. We track every metric to ensure you evolve from a recruit into a Spartan warrior.</p>
+          <div class="progress-bars">
+            <div class="progress-item">
+              <div class="progress-label"><span>Conditioning</span><span class="progress-num"
+                  data-target="95">0%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>Strength & Mobility</span><span class="progress-num" data-target="88">0%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>Olympic Lifting</span><span class="progress-num"
+                  data-target="82">0%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="82"></div>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary shine-btn" style="margin-top:2rem">Make Appointment</a>
+        </div>
+        <div class="stats-right fade-up delay-1">
+          <div class="stat-item">
+            <div class="stat-num" data-target="25">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Years Experiences</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="4000">0</div>
+            <div class="stat-plus">K+</div>
+            <div class="stat-label">Satisfied Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="150">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Awards Winner</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="50">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">Expert Trainers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ATHLETE TRANSFORMATION (Slider) ===== -->
+  <section class="transformations section-pad">
+    <div class="container">
+      <div class="section-label center fade-up">BEYOND THE SCALE</div>
+      <h2 class="section-title center fade-up">ATHLETE EVOLUTION</h2>
+      
+      <div class="testimonial-slider-container fade-up">
+        <div class="testimonial-slider-track">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="transformation-grid">
+              <div class="transform-card">
+                <div class="transform-img">
+                  <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&q=80" alt="Before" />
+                  <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80" alt="After" />
+                </div>
+                <div class="transform-info">
+                  <h3>ANURA K.</h3>
+                  <p>"CrossFit at SPARTA changed my mindset. I'm stronger, faster, and more disciplined than ever before."</p>
+                </div>
+              </div>
+              <div class="transform-card">
+                <div class="transform-img">
+                  <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="Before" />
+                  <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="After" />
+                </div>
+                <div class="transform-info">
+                  <h3>DILINI M.</h3>
+                  <p>"The community kept me going. I found a strength I never knew I had. SPARTA is my second home."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="transformation-grid">
+              <div class="transform-card">
+                <div class="transform-img">
+                  <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80" alt="Before" />
+                  <img src="https://images.unsplash.com/photo-1518611012118-29fa11346e67?w=600&q=80" alt="After" />
+                </div>
+                <div class="transform-info">
+                  <h3>KASUN R.</h3>
+                  <p>"I lost 15kg and gained a new perspective on life. The coaching here is unparalleled."</p>
+                </div>
+              </div>
+              <div class="transform-card">
+                <div class="transform-img">
+                  <img src="https://images.unsplash.com/photo-1574673139641-77ae3830825a?w=600&q=80" alt="Before" />
+                  <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600&q=80" alt="After" />
+                </div>
+                <div class="transform-info">
+                  <h3>SADUNI W.</h3>
+                  <p>"From a beginner to competing in local CrossFit events. SPARTA helped me find my edge."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="transformation-grid">
+              <div class="transform-card">
+                <div class="transform-img">
+                  <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2adfcd?w=600&q=80" alt="Before" />
+                  <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="After" />
+                </div>
+                <div class="transform-info">
+                  <h3>ROHAN P.</h3>
+                  <p>"I never thought I could lift heavy. Now I'm hitting PRs every week. Elite atmosphere."</p>
+                </div>
+              </div>
+              <div class="transform-card">
+                <div class="transform-img">
+                  <img src="https://images.unsplash.com/photo-1518611012118-29fa11346e67?w=600&q=80" alt="Before" />
+                  <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80" alt="After" />
+                </div>
+                <div class="transform-info">
+                  <h3>MAYUMI T.</h3>
+                  <p>"The functional training fixed my back pain and improved my daily life. Best box in the city."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="testimonial-slide">
+            <div class="transformation-grid">
+              <div class="transform-card">
+                <div class="transform-img">
+                  <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="Before" />
+                  <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&q=80" alt="After" />
+                </div>
+                <div class="transform-info">
+                  <h3>ARJUN S.</h3>
+                  <p>"SPARTA is more than a gym. It's a family of warriors pushing each other to greatness."</p>
+                </div>
+              </div>
+              <div class="transform-card">
+                <div class="transform-img">
+                  <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&q=80" alt="Before" />
+                  <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80" alt="After" />
+                </div>
+                <div class="transform-info">
+                  <h3>NADEESHA L.</h3>
+                  <p>"Elite coaching, premium facilities, and the best community. Worth every second."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <div class="testimonial-controls">
+          <button class="slider-btn prev" id="testiPrev">←</button>
+          <div class="slider-dots" id="testiDots"></div>
+          <button class="slider-btn next" id="testiNext">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERT COACHES ===== -->
+  <section class="team section-pad">
+    <div class="container">
+      <div class="section-label center fade-up">ELITE STAFF</div>
+      <h2 class="section-title center fade-up">MEET THE <span class="accent">COACHES</span></h2>
+      <div class="team-grid">
+        <div class="team-card fade-up">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&q=80" alt="James Carter" />
+          </div>
+          <div class="team-info">
+            <h4>James Carter</h4>
+            <span>Head Coach (L2)</span>
+            <p style="font-size:13px; color:var(--muted); margin-top:12px; line-height:1.5;">10+ years of elite coaching experience. Expert in high-performance program design and competitive CrossFit preparation.</p>
+          </div>
+        </div>
+        <div class="team-card fade-up delay-1">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80" alt="Mike Johnson" />
+          </div>
+          <div class="team-info">
+            <h4>Mike Johnson</h4>
+            <span>Olympic Lifting Coach</span>
+            <p style="font-size:13px; color:var(--muted); margin-top:12px; line-height:1.5;">Former competitive weightlifter and USAW certified coach. Master of Snatch and Clean & Jerk technical precision.</p>
+          </div>
+        </div>
+        <div class="team-card fade-up delay-2">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80" alt="Sarah Williams" />
+          </div>
+          <div class="team-info">
+            <h4>Sarah Williams</h4>
+            <span>Mobility & Recovery</span>
+            <p style="font-size:13px; color:var(--muted); margin-top:12px; line-height:1.5;">Specialized in functional mobility and injury prevention. Helping athletes move better and recover faster.</p>
+          </div>
+        </div>
+        <div class="team-card fade-up delay-3">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" alt="David Lee" />
+          </div>
+          <div class="team-info">
+            <h4>David Lee</h4>
+            <span>Conditioning Specialist</span>
+            <p style="font-size:13px; color:var(--muted); margin-top:12px; line-height:1.5;">HYROX athlete and endurance powerhouse. Dedicated to building unstoppable stamina and mental toughness.</p>
+          </div>
+        </div>
+      </div>
+      <div class="center-btn fade-up" style="margin-top:50px;">
+        <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY GALLERY ===== -->
+  <section class="community section-pad">
+    <div class="container">
+      <div class="section-label center fade-up">JOIN THE PHALANX</div>
+      <h2 class="section-title center fade-up">COMMUNITY IN ACTION</h2>
+      <div class="instagram-grid">
+        <div class="insta-item fade-up"><img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&q=80" alt="Training" /><div class="insta-overlay"><span>VIEW</span></div></div>
+        <div class="insta-item fade-up delay-1"><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=400&q=80" alt="Training" /><div class="insta-overlay"><span>VIEW</span></div></div>
+        <div class="insta-item fade-up delay-2"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&q=80" alt="Training" /><div class="insta-overlay"><span>VIEW</span></div></div>
+        <div class="insta-item fade-up delay-3"><img src="https://images.unsplash.com/photo-1518611012118-29fa11346e67?w=400&q=80" alt="Training" /><div class="insta-overlay"><span>VIEW</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER Owned by Umar Hunais ===== -->
+  <section class="cta-banner">
+    <div class="cta-bg">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&q=80" alt="CTA" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container cta-content fade-up">
+      <h2>FORGE YOUR <span class="accent">LEGACY</span></h2>
+      <p>Join the elite functional fitness community and push your boundaries at SPARTA.</p>
+      <a href="contact.html" class="btn btn-primary shine-btn">JOIN THE BOX</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="nav-logo" style="display:flex;align-items:center;margin-bottom:20px;">
+            <img src="logo.png" alt="SPARTA" style="height: 60px; filter: brightness(0) invert(1) contrast(200%);" />
+          </a>
+          <p style="font-size:14px;color:var(--muted);line-height:1.6;">
+            The premier CrossFit box for elite performance, functional movement, and community strength. Forge your spirit, join the phalanx.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#wod">CrossFit WOD</a></li>
+            <li><a href="services.html#lifting">Olympic Lifting</a></li>
+            <li><a href="services.html#conditioning">Conditioning</a></li>
+            <li><a href="services.html#foundations">Foundations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li style="font-size:14px;color:var(--muted);">📍 Colombo, Sri Lanka</li>
+            <li style="font-size:14px;color:var(--muted);">📞 0778502118</li>
+            <li style="font-size:14px;color:var(--muted);">✉ info@sparta.lk</li>
+            <li style="font-size:14px;color:var(--muted);">🕐 Mon–Sun: 5AM – 9PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SPARTA CROSSFIT. All Rights Reserved. | Are you an admin? <a href="admin/login.html" style="color: var(--accent); text-decoration: none;">Log in here</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== VIDEO MODAL ===== -->
+  <div id="videoModal" class="video-modal" role="dialog" aria-modal="true" aria-label="Video Profile" tabindex="-1">
+    <div class="video-modal-backdrop"></div>
+    <div class="video-modal-container">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close video">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="video-modal-inner">
+        <video id="profileVideo" class="profile-video" controls playsinline preload="none">
+          <source src="15806255_1920_1080_25fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

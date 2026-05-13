@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | MY FITNESS CMS</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">MY FITNESS</h1>
+                <p class="subtitle">CMS Admin</p>
+            </div>
+            <nav class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-chart-line"></i><span>Dashboard</span></a></li>
+                <li class="nav-item"><a href="members.html" class="nav-link active"><i class="fas fa-users"></i><span>Members</span></a></li>
+                <li class="nav-item"><a href="payments.html" class="nav-link"><i class="fas fa-credit-card"></i><span>Payments</span></a></li>
+            </nav>
+            <button onclick="logout()" class="logout-btn"><i class="fas fa-sign-out-alt"></i><span>Logout</span></button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="section-header">
+                <h2>Member Management</h2>
+                <button id="addMemberBtn" class="login-btn" style="margin-top: 0; width: auto; padding: 10px 20px;">
+                    <i class="fas fa-user-plus"></i> Register Member
+                </button>
+            </header>
+
+            <!-- Registration Form (Modal or Toggle) -->
+            <div id="registrationSection" class="content-section" style="display: none; margin-bottom: 30px;">
+                <div class="section-header">
+                    <h3>New Member Registration</h3>
+                    <button id="closeFormBtn" class="logout-btn" style="padding: 5px 10px; border: none;">×</button>
+                </div>
+                <form id="memberForm" class="form-grid">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="memberName" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="memberPhone" required placeholder="+1 234 567 890">
+                    </div>
+                    <div class="form-group">
+                        <label>Membership Type</label>
+                        <select id="membershipType" required>
+                            <option value="Basic">Basic</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Premium">Premium</option>
+                            <option value="VIP">VIP</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Start Date</label>
+                        <input type="date" id="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Expiry Date</label>
+                        <input type="date" id="expiryDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Initial Payment (LKR)</label>
+                        <input type="number" id="paymentAmount" required placeholder="5000">
+                    </div>
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <select id="paymentMethod" required>
+                            <option value="Cash">Cash</option>
+                            <option value="Online">Online / PayHere</option>
+                        </select>
+                    </div>
+                    <div class="photo-upload" id="photoDropzone">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Click or drag member photo here (Optional)</p>
+                        <input type="file" id="memberPhoto" accept="image/*" style="display: none;">
+                        <img id="photoPreview" src="" style="display: none; width: 100%; max-height: 200px; object-fit: contain; margin-top: 10px;">
+                    </div>
+                    <div style="grid-column: span 2; display: flex; gap: 15px;">
+                        <button type="submit" class="login-btn" style="flex: 1;">Save Member</button>
+                        <button type="button" id="cancelBtn" class="logout-btn" style="flex: 1;">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Members List -->
+            <div class="content-section">
+                <div class="section-header">
+                    <h3>All Members</h3>
+                    <div class="search-box">
+                        <input type="text" id="memberSearch" placeholder="Search members..." style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); padding: 8px 15px; border-radius: 10px; color: white;">
+                    </div>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Expiry</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="membersTableBody">
+                        <!-- Data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/members.js"></script>
+</body>
+</html>

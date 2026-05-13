@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – SPARTA</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="SPARTA" style="height: 55px; filter: brightness(0) invert(1) contrast(200%);" /></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1600&q=80" alt="Contact" />
+    <div class="page-hero-overlay"></div>
+  </div>
+  <div class="container">
+    <h1 class="fade-up">CONTACT US</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Contact</div>
+  </div>
+</section>
+
+<section class="contact-section section-pad">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Info Column -->
+      <div class="contact-info-col">
+        <div class="section-label fade-up">GET IN TOUCH</div>
+        <h2 class="section-heading fade-up">Forge Your <span class="accent">Strength</span></h2>
+        <p class="fade-up" style="color:var(--muted);margin-bottom:40px;">Have questions? Want to make an appointment? Our team is here to help you start your fitness journey.</p>
+
+        <div class="contact-info-item fade-up">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h4>Our Location</h4>
+            <p>123 Fitness Street, Gym City<br/>State, Country 10001</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item fade-up delay-1">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+          </div>
+          <div>
+            <h4>Phone Number</h4>
+            <p>+1 (800) 123-4567<br/>+1 (800) 765-4321</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item fade-up delay-2">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <h4>Email Address</h4>
+            <p>umarhunais2023@gmail.com<br/>ucode464@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item fade-up delay-3">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Monday – Friday: 6AM – 10PM<br/>Saturday – Sunday: 7AM – 8PM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Column -->
+      <div class="fade-up delay-1">
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:48px 40px;">
+          <h3 style="font-family:var(--font-heading);font-size:28px;letter-spacing:1px;margin-bottom:8px;">Send a Message</h3>
+          <p style="color:var(--muted);font-size:14px;margin-bottom:32px;">Fill out the form and we'll get back to you within 24 hours.</p>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (800) 123-4567" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a Service</option>
+                  <option>CrossFit WOD</option>
+                  <option>Olympic Lifting</option>
+                  <option>Conditioning</option>
+                  <option>Functional Fitness</option>
+                  <option>Mobility</option>
+                  <option>Foundations</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us about your fitness goals..." required></textarea>
+            </div>
+
+            <div id="formStatus" class="form-status"></div>
+
+            <button type="submit" class="btn btn-primary shine-btn" style="width:100%;justify-content:center;padding:18px;">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<div style="height:400px;background:var(--bg2);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;">
+  <div style="font-family:var(--font-heading);font-size:24px;letter-spacing:2px;color:var(--muted);">📍 FIND US ON THE MAP</div>
+  <p style="color:var(--muted);font-size:14px;">Colombo, Sri Lanka</p>
+  <a href="https://maps.google.com" target="_blank" class="btn btn-primary" style="margin-top:8px;">Open in Maps</a>
+</div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="nav-logo" style="display:flex;align-items:center;margin-bottom:20px;">
+            <img src="logo.png" alt="SPARTA" style="height: 60px; filter: brightness(0) invert(1) contrast(200%);" />
+          </a>
+          <p style="font-size:14px;color:var(--muted);line-height:1.6;">
+            The premier CrossFit box for elite performance, functional movement, and community strength. Forge your spirit, join the phalanx.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#wod">CrossFit WOD</a></li>
+            <li><a href="services.html#lifting">Olympic Lifting</a></li>
+            <li><a href="services.html#conditioning">Conditioning</a></li>
+            <li><a href="services.html#foundations">Foundations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li style="font-size:14px;color:var(--muted);">📍 Colombo, Sri Lanka</li>
+            <li style="font-size:14px;color:var(--muted);">📞 0778502118</li>
+            <li style="font-size:14px;color:var(--muted);">✉ info@sparta.lk</li>
+            <li style="font-size:14px;color:var(--muted);">🕐 Mon–Sun: 5AM – 9PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SPARTA CROSSFIT. All Rights Reserved. | Are you an admin? <a href="admin/login.html" style="color: var(--accent); text-decoration: none;">Log in here</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/main.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const service = document.getElementById('service').value;
+  const message = document.getElementById('message').value;
+  
+  const whatsappNumber = "0778502118";
+  const text = `*New Lead from SPARTA Website*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Service:* ${service}%0A*Message:* ${message}`;
+  
+  window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+});
+</script>
+</body>
+</html>

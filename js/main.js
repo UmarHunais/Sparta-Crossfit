@@ -162,7 +162,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Auto slide optional
     setInterval(() => {
-      // testiNext.click(); 
+      testiNext.click(); 
+    }, 6000);
+  }
+
+  // === REVIEWS SLIDER ===
+  const reviewsTrack = document.getElementById('reviewsTrack');
+  const reviewsSlides = document.querySelectorAll('.reviews-slide');
+  const reviewsPrev = document.getElementById('reviewsPrev');
+  const reviewsNext = document.getElementById('reviewsNext');
+  const reviewsDotsContainer = document.getElementById('reviewsDots');
+
+  if (reviewsTrack && reviewsSlides.length > 0) {
+    let currentRevSlide = 0;
+    const revSlideCount = reviewsSlides.length;
+
+    // Create dots
+    reviewsSlides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToRevSlide(i));
+      reviewsDotsContainer.appendChild(dot);
+    });
+
+    const revDots = reviewsDotsContainer.querySelectorAll('.dot');
+
+    const updateReviewsSlider = () => {
+      reviewsTrack.style.transform = `translateX(-${currentRevSlide * (100 / revSlideCount)}%)`;
+      revDots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentRevSlide);
+      });
+    };
+
+    const goToRevSlide = (index) => {
+      currentRevSlide = index;
+      updateReviewsSlider();
+    };
+
+    reviewsNext.addEventListener('click', () => {
+      currentRevSlide = (currentRevSlide + 1) % revSlideCount;
+      updateReviewsSlider();
+    });
+
+    reviewsPrev.addEventListener('click', () => {
+      currentRevSlide = (currentRevSlide - 1 + revSlideCount) % revSlideCount;
+      updateReviewsSlider();
+    });
+
+    // Auto slide every 5 seconds
+    setInterval(() => {
+      reviewsNext.click();
     }, 5000);
   }
 

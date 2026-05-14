@@ -1,5 +1,5 @@
 /**
- * SPARTA – Express Email Server
+ * SPARTA MMXXI – Express Email Server
  * POST /contact → sends styled HTML email via Nodemailer
  *
  * Setup:
@@ -118,7 +118,7 @@ function buildEmailHTML({ name, email, phone, service, message }) {
 <body>
   <div class="wrapper">
     <div class="header">
-      <div class="logo">SPARTA</div>
+      <div class="logo">SPARTA MMXXI</div>
       <div class="tagline">ELITE CROSSFIT BOX</div>
     </div>
     <div class="body">
@@ -150,9 +150,9 @@ function buildEmailHTML({ name, email, phone, service, message }) {
     </div>
     <div class="footer-email">
       <p>
-        This email was sent from the SPARTA website contact form.<br />
+        This email was sent from the SPARTA MMXXI website contact form.<br />
         Reply directly to <a href="mailto:${email}">${email}</a> to respond to this enquiry.<br /><br />
-        © 2026 SPARTA · Colombo, Sri Lanka
+        © 2026 SPARTA MMXXI · 465/2 Sri Jayawardenepura Mawatha Welikada, 10100
       </p>
     </div>
   </div>
@@ -185,14 +185,14 @@ app.post('/contact', async (req, res) => {
   try {
     // Compose mail options
     const mailOptions = {
-      from: `"SPARTA Website" <${process.env.EMAIL_USER}>`,
+      from: `"SPARTA MMXXI Website" <${process.env.EMAIL_USER}>`,
       to: 'umarhunais2023@gmail.com',
       cc: 'ucode464@gmail.com',
       replyTo: email,
-      subject: `[SPARTA] New Enquiry from ${name}`,
+      subject: `[SPARTA MMXXI] New Enquiry from ${name}`,
       html: buildEmailHTML({ name, email, phone, service, message }),
       text: `
-New Contact Form Submission – SPARTA
+New Contact Form Submission – SPARTA MMXXI
 ==========================================
 Name:    ${name}
 Email:   ${email}
@@ -202,7 +202,7 @@ Service: ${service || 'General Enquiry'}
 Message:
 ${message}
 
-Sent via SPARTA website contact form.
+Sent via SPARTA MMXXI website contact form.
       `.trim()
     };
 
@@ -223,6 +223,6 @@ app.get('*', (req, res) => {
 
 // ── Start Server ──────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`\n🏋️  SPARTA server running at http://localhost:${PORT}`);
+  console.log(`\n🏋️  SPARTA MMXXI server running at http://localhost:${PORT}`);
   console.log(`    Press Ctrl+C to stop.\n`);
 });
